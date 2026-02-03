@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/STYLE.CSS">
+    <link rel="stylesheet" href="../CSS/ANIMATIONS.CSS">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff4ecd, #6a5cff, #00d4ff);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            color: #ffffff;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+        .skill-card h3 {
+            color: #fff;
+            margin-top: 0;
+        }
+        .skill-card p {
+            color: #f0f0f0;
+        }
+        .btn {
+            background: white;
+            color: #6a5cff;
+            font-weight: bold;
+        }
+        .hero {
+            flex-direction: column;
+            height: auto;
+            min-height: 80vh;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="INDEX.HTML">Home</a>
+            <a href="PROJECTS.HTML">Projects</a>
+            <a href="SKILLS.HTML">Skills</a>
+            <a href="CERTIFICATES.HTML">Certificates</a>
+            <a href="RESUME.HTML">Resume</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="https://NITHISHPORTFOLIO.COM" target="_blank">Portfolio</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>My Courses</h1>
+            <p>Explore the courses I offer.</p>
+            <div class="skills-container">
+                <div class="skill-card slide-in" style="animation-delay: 0.1s;">
+                    <h3>HTML5, CSS3, JavaScript</h3>
+                    <p>The fundamental building blocks of the web.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+                <div class="skill-card slide-in" style="animation-delay: 0.2s;">
+                    <h3>Embedded using C</h3>
+                    <p>Low-level programming for microcontrollers and embedded systems.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+                <div class="skill-card slide-in" style="animation-delay: 0.3s;">
+                    <h3>Python, Django</h3>
+                    <p>A versatile language and web framework for backend development.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+                <div class="skill-card slide-in" style="animation-delay: 0.4s;">
+                    <h3>SQL</h3>
+                    <p>Database management and querying.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+                <div class="skill-card slide-in" style="animation-delay: 0.5s;">
+                    <h3>Java,SpringBoot</h3>
+                    <p>A robust, object-oriented programming language.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+                <div class="skill-card slide-in" style="animation-delay: 0.6s;">
+                    <h3>Networking</h3>
+                    <p>Understanding of network protocols, LAN/WAN, and security.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+                <div class="skill-card slide-in" style="animation-delay: 0.7s;">
+                    <h3>PCB Design</h3>
+                    <p>Designing and prototyping printed circuit boards.</p>
+                    <a href="#" class="btn">Get Course</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JS/MAINS.JS"></script>
+    <script src="../JS/API.JS"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | NITHISH GS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/STYLE.CSS">
+    <link rel="stylesheet" href="../CSS/ANIMATIONS.CSS">
+    <style>
+        .resume-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0);
+        }
+        .resume-section {
+            margin-bottom: 20px;
+        }
+        .resume-section h2 {
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        .resume-section h3 {
+            margin-top: 0;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .skills-list li {
+            background: linear-gradient(135deg, #ff4ecd, #6a5cff);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            width: fit-content;
+        }
+        .skills-list li a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .click-effect {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(0, 212, 255, 1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            pointer-events: none;
+            animation: ripple-ring 0.6s ease-out forwards;
+        }
+        @keyframes ripple-ring {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 1; border-width: 5px; }
+            100% { transform: translate(-50%, -50%) scale(3); opacity: 0; border-width: 0px; }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            color: white;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        th {
+            background-color: rgba(0, 123, 255, 0.2);
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="INDEX.HTML">Home</a>
+            <a href="PROJECTS.HTML">Projects</a>
+            <a href="SKILLS.HTML">Skills</a>
+            <a href="CERTIFICATES.HTML">Certificates</a>
+            <a href="RESUME.HTML">Resume</a>
+            <a href="CONTACT.HTML">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="resume-container">
+            <div class="text-center" style="text-align: center;">
+                <h1>NITHISH GS</h1>
+                <p>Web Developer | Full Stack Developer</p>
+                <p>nithishgs05@gmail.com | 8682927601 | NITHISH portfolio.com</p>
+            </div>
+
+                        <div class="resume-section bounce-in">
+                            <h2>Carrier Objecives</h2>
+                            <p>Motivated Electronics and Communication Engineering graduate seeking entry-level
+            opportunities in IT or core ECE roles. Strong foundation in networking concepts,
+            programming (Java & Python), and communication systems, with hands-on project
+            experience in LAN-based applications and network monitoring systems. Eager to contribute
+            technical skills and grow in a challenging professional environment.</p>
+                        </div>
+            
+                        <div class="resume-section bounce-in">
+                            <h2>Education</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Degree/Certificate</th>
+                                        <th>Institution</th>
+                                        <th>Year of Passing</th>
+                                        <th>Stream/Major</th>
+                                        <th>Percentage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>B.E Electronics and Communication Engineering</td>
+                                        <td>KONGUNADU COLLEGE OF ENGINERRING AND TECHNOLOGY</td>
+                                        <td>2027</td>
+                                        <td>ECE</td>
+                                        <td>7.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Higher Secondary (12th)</td>
+                                        <td>THE MODERN ACADEMY</td>
+                                        <td>2023</td>
+                                        <td>BIOLOGY</td>
+                                        <td>87</td>
+                                        <tr>
+                                            <td>Secondary(10th)</td>
+                                            <td>THE MODERN ACADEMY</td>
+                                            <td>2021</td>
+                                            <td>SCIENCE</td>
+                                            <td>82</td>
+                                        </tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+            
+                        <div class="resume-section bounce-in">
+                            <h2>Skills</h2>
+                            <ul class="skills-list">
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>C - <a href="../ASSERTS/CERTIFICATES/PROGRAMMING/C.pdf" target="_blank">C Programming</a></li>
+                                <li>Python, Django - <a href="../ASSERTS/CERTIFICATES/PROGRAMMING/PYTHON.pdf" target="_blank">Python Programming</a></li>
+                                <li>Java, SpringBoot - <a href="../ASSERTS/CERTIFICATES/PROGRAMMING/JAVA.pdf" target="_blank">Java Programming</a></li>
+                                <li>SQL - <a href="../ASSERTS/CERTIFICATES/PROGRAMMING/MYSQL.pdf" target="_blank">MySQL</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="resume-section bounce-in">
+                            <h2>Certificates</h2>
+                            <h3>Academic Certificates</h3>
+                            <ul>
+                                <li><a href="../ASSERTS/CERTIFICATES/ACADEMICS/10TH.pdf" target="_blank">10th Certificate</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/ACADEMICS/12TH.pdf" target="_blank">12th Certificate</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/ACADEMICS/SEM1 (1).pdf" target="_blank">Semester 1</a></li>
+                                <li><a href="../ASSERTS/CERTIFICates/ACADEMICS/SEM2.pdf" target="_blank">Semester 2</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/ACADEMICS/SEM3.pdf" target="_blank">Semester 3</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/ACADEMICS/SEM4.pdf" target="_blank">Semester 4</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/ACADEMICS/SEM5.pdf" target="_blank">Semester 5</a></li>
+                            </ul>
+                            <h3>Programming & Project Certificates</h3>
+                            <ul>
+                                <li>PCB Design - <a href="../ASSERTS/CERTIFICATES/CORE/PCB.pdf" target="_blank">PCB Design</a></li>
+                                <li>EMBEDDED - <a href="../ASSERTS/CERTIFICATES/PROGRAMMING/EMBEDDED.pdf" target="_blank">EMBEDDED Programming</a></li>
+                            </ul>
+                            <h3>Extracurricular Activities</h3>
+                            <ul>
+                                <li><a href="../ASSERTS/CERTIFICATES/PROJECTS/WORKSHOP.pdf" target="_blank">Workshop</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/PROJECTS/WORKSHOP1.pdf" target="_blank">Workshop 1</a></li>
+                                <li><a href="../ASSERTS/CERTIFICATES/PROJECTS/WORKSHOP3.pdf" target="_blank">Workshop 3</a></li>
+                                <li>NAVIGATING ROBOTIC CAARS WITH YOUR VOICE-<a href="../ASSERTS/CERTIFICATES/PROJECTS/PAPER PRESENTATION1.pdf" target="_blank">Paper presentation</a></li>
+                                <li>ROBOTICS- <a href="../ASSERTS/CERTIFICATES/PROJECTS/PAPERPRESENTATION.pdf" target="_blank">Paperpresentation1</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="resume-section text-center bounce-in" style="text-align: center;">
+                            <h2>Download PDF</h2>
+                            <a href="../ASSETS/RESUME/RESUME.PDF" class="btn" target="_blank">Download Resume</a>
+                        </div>
+        </div>
+    </main>
+
+    <script src="../JS/MAINS.JS"></script>
+    <script src="../JS/API.JS"></script>
+    <script>
+        document.addEventListener('click', (e) => {
+            const effect = document.createElement('div');
+            effect.className = 'click-effect';
+            effect.style.left = `${e.pageX}px`;
+            effect.style.top = `${e.pageY}px`;
+            document.body.appendChild(effect);
+            effect.addEventListener('animationend', () => effect.remove());
+        });
+    </script>
+</body>
+</html>

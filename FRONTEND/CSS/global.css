@@ -1,0 +1,80 @@
+/* 1. Background Change */
+body {
+    /* You can change the color code below to whatever you prefer */
+    background-color: #f4f4f9; 
+    
+    /* If you want to use an image instead, uncomment the line below and check the path */
+    /* background-image: url('../IMAGES/background.jpg'); */
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: sans-serif; 
+    animation: fadeInOpacity 7d ease-out; /* Smooth fade-in for the whole page */
+}
+
+/* 2. Profile Picture Styling */
+.profile-pic {
+    position: fixed; /* Fixes the image to the screen */
+    top: 20px;       /* Distance from top */
+    left: 20px;      /* Distance from left */
+    width: 100px;    /* Adjusted size for corner */
+    height: 100px;
+    border-radius: 50%; /* This makes the picture round */
+    object-fit: cover;  /* Ensures the image doesn't stretch */
+    border: 3px solid #333; /* Optional: adds a border around the picture */
+    z-index: 1000;   /* Ensures it stays on top of other elements */
+}
+
+/* 3. Keyframe Animations */
+/* Defines the animations that can be used */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInOpacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* 4. Animation Utility Classes */
+/* Add these classes to your HTML elements to apply the animation */
+.fade-in-section {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+/* 6. Scroll Animation Helper */
+.scroll-hidden {
+    opacity: 0; /* Hidden until JS triggers the animation */
+}
+
+/* 5. Interactive Animations */
+/* Adds a subtle pulse animation to the profile picture on hover */
+.profile-pic:hover {
+    animation: pulse 1.5s ease-in-out infinite;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Nithish GS Portfolio",
+  "short_name": "Nithish",
+  "start_url": "INDEX.HTML",
+  "display": "standalone",
+  "background_color": "#6a5cff",
+  "theme_color": "#6a5cff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "../ASSERTS/IMAGES/PROFILE.JPG",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

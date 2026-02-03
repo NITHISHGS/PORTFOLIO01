@@ -1,0 +1,168 @@
+-- Active: 1769969370886@@_@null
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NITHISH GS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/STYLE.CSS">
+    <link rel="stylesheet" href="../CSS/ANIMATIONS.CSS">
+    <link rel="manifest" href="../JS/manifest.json">
+    <meta name="theme-color" content="#6a5cff">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff4ecd, #6a5cff, #00d4ff);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+        .hero-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .profile-section {
+            position: relative;
+        }
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .opentowork-badge {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1fae4b;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            white-space: nowrap;
+        }
+        .info-section {
+            color: white;
+            max-width: 500px;
+        }
+        .info-section h1 {
+            font-size: 3rem;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .info-section p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .contact-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .contact-details a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px dashed rgba(255,255,255,0.5);
+            transition: all 0.2s;
+        }
+        .contact-details a:hover {
+            color: #ffeb3b;
+            border-bottom-style: solid;
+        }
+        /* Animation for clicking content */
+        .animate-click:active {
+            transform: scale(0.90);
+            display: inline-block;
+        }
+        .click-effect {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(0, 212, 255, 1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            pointer-events: none;
+            animation: ripple-ring 0.6s ease-out forwards;
+        }
+        @keyframes ripple-ring {
+            0% { transform: translate(-50%, -50%) scale(0); opacity: 1; border-width: 5px; }
+            100% { transform: translate(-50%, -50%) scale(3); opacity: 0; border-width: 0px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="INDEX.HTML">Home</a>
+            <a href="PROJECTS.HTML">Projects</a>
+            <a href="SKILLS.HTML">Skills</a>
+            <a href="CERTIFICATES.HTML">Certificates</a>
+            <a href="RESUME.HTML">Resume</a>
+            <a href="CONTACT.HTML">Contact</a>
+            <a href="https://NITHISHPORTFOLIO.COM" target="_blank">Portfolio</a>
+        </nav>
+    </header>
+    <main> 
+        <div class="hero-container">
+            <div class="profile-section">
+                <img src="../ASSERTS/IMAGES/PROFILE.JPG" alt="Profile Picture" class="profile-img">
+                <div class="opentowork-badge">#OPENTOWORK</div>
+            </div>
+            <div class="info-section">
+                <h1>NITHISH GS</h1>
+                <p>Full Stack Developer</p>
+                <div class="contact-details">
+                    <p>Email: <a href="mailto:nithishgs05@gmail.com" class="animate-click">nithishgs05@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/nithish" target="_blank" class="animate-click">linkedin.com/in/nithish</a></p>
+                    <p>GitHub: <a href="https://github.com/NITHISHGS" target="_blank" class="animate-click">github.com/NITHISHGS</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../JS/MAINS.JS"></script>
+    <script src="../JS/API.JS"></script>
+    <script>
+        document.addEventListener('click', (e) => {
+            const effect = document.createElement('div');
+            effect.className = 'click-effect';
+            effect.style.left = `${e.pageX}px`;
+            effect.style.top = `${e.pageY}px`;
+            document.body.appendChild(effect);
+            effect.addEventListener('animationend', () => effect.remove());
+        });
+
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../JS/sw.js');
+        }
+    </script>
+</body>
+</html>
